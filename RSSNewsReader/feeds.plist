@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>https://developer.apple.com/news/rss/news.rss</string>
+	<string>http://www.crhoy.com/feed/</string>
+	<string>http://wvw.nacion.com/rss/portada.xml</string>
+	<string>http://www.diarioextra.com/includes/rss_text.php?id=1</string>
+	<string>http://elpais.cr/include/rss_nacionales.php</string>
+	<string>http://www.larepublica.pe/rss/rss</string>
+</array>
+</plist>
