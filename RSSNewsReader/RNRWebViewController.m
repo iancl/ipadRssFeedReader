@@ -7,12 +7,14 @@
 //
 
 #import "RNRWebViewController.h"
+#import "RNRItem.h"
 
 @interface RNRWebViewController ()
 
 @end
 
 @implementation RNRWebViewController
+@synthesize item = item_;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,21 +29,26 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-}
-
--(void)setWebViewAddressWithUrl: (NSString *)anUrl{
     
-    NSString *fullURL = @"http://conecode.com";
+    
+    //set navigation item title
+    [[self navigationItem] setTitle:[[self item] title]];
+    
+    NSString *fullURL = [[self item] link];
     NSURL *url = [NSURL URLWithString:fullURL];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-    
+    [webView setScalesPageToFit:YES];
     [webView loadRequest:requestObj];
+
+    
+    
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
+    NSLog(@"%@", [error localizedDescription]);
 }
+
+
 
 @end

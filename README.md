@@ -9,6 +9,8 @@ Check your RSS channels from your ipad
 This is a RSS reader that I am currently developing. Right now it is just parsing rss from some newspaper sites and from the apple developer feed.
 
 
+error handing and appropriate control enabling is pending until creative design and animations are defined
+
 
 Class structure
 --------------

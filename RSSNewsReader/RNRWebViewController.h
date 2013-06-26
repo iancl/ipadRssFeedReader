@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class RNRItem;
+
 @interface RNRWebViewController : UIViewController{
     
     __weak IBOutlet UIWebView *webView;
 }
 
+@property (nonatomic, strong) RNRItem *item;
 
--(void)setWebViewAddressWithUrl: (NSString *)anUrl;
 @end

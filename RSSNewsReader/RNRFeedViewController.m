@@ -9,6 +9,7 @@
 #import "RNRFeedViewController.h"
 #import "RNRFeedChannel.h"
 #import "RNRItem.h"
+#import "RNRWebViewController.h"
 
 @interface RNRFeedViewController ()
 
@@ -48,6 +49,16 @@
     return [self.channel.allItems count];
 }
 
+- (void) tableView: (UITableView *) tableView didSelectRowAtIndexPath: (NSIndexPath *) indexPath {
+    RNRItem *item = [[[self channel] allItems] objectAtIndex:indexPath.row];
+    
+    RNRWebViewController *wv = [[RNRWebViewController alloc] init];
+    
+    [wv setItem:item];
+    
+    [[self navigationController] pushViewController:wv animated:YES];
+    
+}
 
 
 @end

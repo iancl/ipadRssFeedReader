@@ -173,7 +173,7 @@ isFirstFetch = isFirstFetch_;
     if ([elementName isEqual:@"item"]) {
         
         //creating new item
-        RNRItem *newItem = [[RNRItem alloc] initWithArticleTitle:title description:description link:link];
+        RNRItem *newItem = [[RNRItem alloc] initWithArticleTitle:title description:description link:[link stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]];
         
         //adding item to allItems array
         [[self allItems] addObject:newItem];

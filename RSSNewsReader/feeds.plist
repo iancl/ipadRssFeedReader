@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
+	<string>http://www.aliceinchains.com/feed/</string>
+	<string>http://www.metalhammer.co.uk/feed/</string>
 	<string>https://developer.apple.com/news/rss/news.rss</string>
 	<string>http://www.crhoy.com/feed/</string>
 	<string>http://wvw.nacion.com/rss/portada.xml</string>
